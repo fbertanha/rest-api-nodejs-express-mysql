@@ -3,8 +3,8 @@ const mysql = require('mysql');
 const conexao = mysql.createConnection({
    host: 'localhost',
    port: 3306,
-   user: 'root',
-   password: 'bindas2',
+   user: 'fbertanha',
+   password: 'admin',
    database: 'agenda_petshop'
 });
 
