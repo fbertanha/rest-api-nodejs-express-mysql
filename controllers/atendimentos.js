@@ -5,11 +5,10 @@ module.exports = app => {
         resp.send('Servidor rodando!!....');
     });
 
-    app.post('/atendimentos', (req, resp) => {
+    app.post('/atendimentos', (req, res) => {
         console.log(req.body);
         const novoAtendimento = req.body;
 
-        Atendimento.adiciona(novoAtendimento);
-        resp.send(novoAtendimento);
+        Atendimento.adiciona(novoAtendimento, res);
     });
 };

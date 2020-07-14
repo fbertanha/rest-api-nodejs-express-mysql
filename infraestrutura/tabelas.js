@@ -13,6 +13,8 @@ class Tabelas {
         servico varchar(20) NOT NULL,
         status varchar(20) NOT NULL,
         observacoes text,
+        data datetime NOT NULL,
+        dataCriacao datetime NOT NULL,
         PRIMARY KEY(id))`;
         this.conexao.query(sql, (erro) => {
            if (erro) {
